@@ -6,5 +6,3 @@
 # Testing bryson lindsey
 
 # Double testing - Bryson Lindsey
-
-#McKay test
