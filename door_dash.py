@@ -6,7 +6,7 @@ o	The constructor should call the randomBurgers() method and assign the return v
 import random
 class Order():
         def __init__(self):
-                self.burger_count = ""
+                self.burger_count = self.randomBurgers()
 
         def randomBurgers(self):
                 return random.randint(1,20)
