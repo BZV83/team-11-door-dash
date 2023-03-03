@@ -10,3 +10,8 @@
 #McKay Test
 
 # Can I edit in git hub?
+
+variable = 3
+doubleVariable = variable*2
+
+print(doubleVariable)
