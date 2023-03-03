@@ -49,7 +49,7 @@ queue_customers = []
 iCountQue = 100
 
 for iCount in range (0, iCountQue) :
-       queue_customers.append([Person.customer_name, iCount + 1])
+       queue_customers.append([Person().customer_name, iCount + 1])
 
 
         #Brendan note: the queue will load 100 people (iCountQue = 100 or something) and will track how many burgers each of the 9 names order.
@@ -67,7 +67,7 @@ dCustomer = {}
 iCountDict = 100
 
 for iCount in range (0, iCountDict) :
-        dCustomer[Person.customer_name] = (iCount+1)
+        dCustomer[Person().customer_name] = (iCount+1)
         
 """NOTE: Remember that a queue in Python is a list data structure. Also, the randint() method from the random class returns a random number. For example:
 iRandomNum = random.randint(0,8)
