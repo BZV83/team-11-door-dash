@@ -24,7 +24,7 @@ class Person ():
     def __init__(self):
         self.customer_name = self.randomName ()
 
-    def randomName ():
+    def randomName (self):
         asCustomers = ["Jefe", "El Guapo", "Lucky Day", "Ned Nederlander", "Dusty Bottoms", "Harry Flugleman", "Carmen", "Invisible Swordsman", "Singing Bush"]
         return asCustomers[random.randint(0,8)]
 
@@ -36,7 +36,7 @@ class Person ():
 class Customer (Person):
       def __init__(self):
         super().__init__()
-        self.order = Order
+        self.order = Order()
       
 
 
