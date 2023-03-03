@@ -17,9 +17,9 @@ o	Create a constructor that defines an instance variable called customer_name
 o	Create a method called randomName() that contains a list of 9 names:
         asCustomers = ["Jefe", "El Guapo", "Lucky Day", "Ned Nederlander", "Dusty Bottoms", "Harry Flugleman", "Carmen", "Invisible Swordsman", "Singing Bush"]
 •	This method randomly returns one of the 9 names when called
-o	
-        The Person constructor should call the randomName() method and assign the return value (a random name) to the customer_name instance variable
-•	Create a Customer class that inherits from the Person class -Mckay
+o	The Person constructor should call the randomName() method and assign the return value (a random name) to the customer_name instance variable
+•	
+        Create a Customer class that inherits from the Person class -Mckay
 o	Create a constructor that calls the parent constructor
 o	Create an instance variable called order in the constructor that is assigned an order object"""
 
