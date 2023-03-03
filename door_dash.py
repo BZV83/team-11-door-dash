@@ -34,6 +34,13 @@ o	This variable will hold information about each customer
 •	Make sure there is a key in the dictionary for each customer before you try incrementing their total! Otherwise, add the customer to the dictionary.
 •	Print out each customer and their total burgers ordered sorted by the most number of burgers ordered"""
 
+dCustomer = {}
+
+iCountDict = 100
+
+for iCount in range (0, iCountDict) :
+        dCustomer[Person.customer_name] = (iCount+1)
+        
 """NOTE: Remember that a queue in Python is a list data structure. Also, the randint() method from the random class returns a random number. For example:
 iRandomNum = random.randint(0,8)
 This returns a random integer between 0 and 8 (9 numbers).
