@@ -22,7 +22,7 @@ class Order():
 #Create a Person class
 class Person ():
     def __init__(self):
-        self.customer_name = randomName ()
+        self.customer_name = self.randomName ()
 
     def randomName ():
         asCustomers = ["Jefe", "El Guapo", "Lucky Day", "Ned Nederlander", "Dusty Bottoms", "Harry Flugleman", "Carmen", "Invisible Swordsman", "Singing Bush"]
