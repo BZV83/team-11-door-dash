@@ -11,17 +11,34 @@ class Order():
         def randomBurgers(self):
                 return random.randint(1,20)
 
+# Create a Person class- Mckay
+# Create a constructor that defines an instance variable called customer_name
+# o	Create a method called randomName() that contains a list of 9 names:
+     # asCustomers = ["Jefe", "El Guapo", "Lucky Day", "Ned Nederlander", "Dusty Bottoms", "Harry Flugleman", "Carmen", "Invisible Swordsman", "Singing Bush"]
+# •	This method randomly returns one of the 9 names when called
+# o	The Person constructor should call the randomName() method and assign the return value (a random name) to the customer_name instance variable
 
-"""•	Create a Person class- Mckay
-o	Create a constructor that defines an instance variable called customer_name
-o	Create a method called randomName() that contains a list of 9 names:
+
+#Create a Person class
+class Person ():
+    def __init__(self):
+        self.customer_name = ""
+
+    def randomName ():
         asCustomers = ["Jefe", "El Guapo", "Lucky Day", "Ned Nederlander", "Dusty Bottoms", "Harry Flugleman", "Carmen", "Invisible Swordsman", "Singing Bush"]
-•	This method randomly returns one of the 9 names when called
-o	The Person constructor should call the randomName() method and assign the return value (a random name) to the customer_name instance variable
-•	
-        Create a Customer class that inherits from the Person class -Mckay
-o	Create a constructor that calls the parent constructor
-o	Create an instance variable called order in the constructor that is assigned an order object"""
+        return asCustomers[random.randint(0,8)]
+
+#Create a Customer class that inherits from the Person class -Mckay
+#Create a constructor that calls the parent constructor
+#Create an instance variable called order in the constructor that is assigned an order object""
+
+#Create a Customer subclass
+class Customer (Person):
+      def __init__(self):
+        super().__init__()
+        self.order = Order
+      
+
 
 
 """•	Create a variable for a Queue that will be assigned items of type Customer - Hayden
@@ -47,17 +64,7 @@ This returns a random integer between 0 and 8 (9 numbers).
 iRandomBurger = random.randint(1, 20)
 This would return a random number between 1 and 20."""
 
-<<<<<<< HEAD
 print(doubleVariable)
 
 
 #landonovan
-=======
- 
-"""You can use a statement similar to: listSortedCustomers = sorted(dictCustomers.items(), key=lambda x: x[1], reverse=True) 
-NOTE: The listSortedCustomers is a new list variable, not a dictionary. Dictionaries cannot be sorted so this statement sorts the data from the dictionary and stores it to a list. For each item in the list (representing a customer) there will be two positions 0 and 
-1. Position 0 contains the previous dictionaries key and position 1 contains the value. 
-Now display the customer name and the total number of burgers consumed. Do this using a for loop displaying the contents of the list in positions 0 and 1. 
-Make the customer name an even sized value using the ljust() function with the value of 
-19 as the parameter like customer[0].ljust(19) where customer is each list item object in the for loop."""
->>>>>>> aa3dfe01be452cdec8c61bbe9a86543b4ebaa010
