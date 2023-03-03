@@ -12,6 +12,7 @@
 # Can I edit in git hub?
 
 #change test from McKay
+#update from McKay
 
 variable = 3
 doubleVariable = variable*2
