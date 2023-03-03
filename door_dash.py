@@ -3,6 +3,13 @@
 o	Create a constructor that defines an instance variable called burger_count
 o	Create a method called randomBurgers that returns a number between 1 and 20
 o	The constructor should call the randomBurgers() method and assign the return value to the burger_count instance variable"""
+import random
+class Order():
+        def __init__(self):
+                self.burger_count = ""
+
+        def randomBurgers(self):
+                return random.randint(1,20)
 
 
 """•	Create a Person class- Mckay
