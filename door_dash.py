@@ -41,8 +41,16 @@ class Customer (Person):
 
 
 
-"""•	Create a variable for a Queue that will be assigned items of type Customer - Hayden
-o	This variable will represent your line of customers (objects) waiting outside to place their hamburger orders"""
+# Create a variable for a Queue that will be assigned items of type Customer - Hayden
+# This variable will represent your line of customers (objects) waiting outside to place their hamburger orders"""
+
+queue_customers = []
+
+iCountQue = 100
+
+for iCount in range (0, iCountQue) :
+       queue_customers.append([Person.customer_name, iCount + 1])
+
 
         #Brendan note: the queue will load 100 people (iCountQue = 100 or something) and will track how many burgers each of the 9 names order.
         #The 9 names will be repeated (but not printed). The names will have a running total of how many burgers were ordered just like the>
