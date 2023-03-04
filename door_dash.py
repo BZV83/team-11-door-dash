@@ -84,7 +84,5 @@ This returns a random integer between 0 and 8 (9 numbers).
 iRandomBurger = random.randint(1, 20)
 This would return a random number between 1 and 20."""
 
-print(doubleVariable)
-
 
 #landonovan
