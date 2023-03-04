@@ -45,11 +45,25 @@ class Customer (Person):
 # This variable will represent your line of customers (objects) waiting outside to place their hamburger orders"""
 
 queue_customers = []
+dCustomer = {}
 
 iCountQue = 100
 
 for iCount in range (0, iCountQue) :
-       queue_customers.append([Person().customer_name, iCount + 1])
+        oCus = Customer() 
+        queue_customers.append(oCus.customer_name)
+        if oCus.customer_name in dCustomer :
+                dCustomer[oCus.customer_name] += oCus.order.burger_count
+        else :
+                dCustomer[oCus.customer_name] = oCus.order.burger_count
+                
+                
+listSortedCustomers = sorted(dCustomer.items(), key=lambda x: x[1], reverse=True) 
+
+
+
+for iCount in range (0,len(listSortedCustomers)) :
+    print("\n" + str(listSortedCustomers[iCount]))
 
 
         #Brendan note: the queue will load 100 people (iCountQue = 100 or something) and will track how many burgers each of the 9 names order.
@@ -62,12 +76,7 @@ o	This variable will hold information about each customer
 •	Make sure there is a key in the dictionary for each customer before you try incrementing their total! Otherwise, add the customer to the dictionary.
 •	Print out each customer and their total burgers ordered sorted by the most number of burgers ordered"""
 
-dCustomer = {}
 
-iCountDict = 100
-
-for iCount in range (0, iCountDict) :
-        dCustomer[Person().customer_name] = (iCount+1)
         
 """NOTE: Remember that a queue in Python is a list data structure. Also, the randint() method from the random class returns a random number. For example:
 iRandomNum = random.randint(0,8)
