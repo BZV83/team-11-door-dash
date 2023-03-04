@@ -1,4 +1,4 @@
-#Brendan Vick, McKay Boody, Hayden Enloe, Landon Graham, Bryson Lindsey, Jake Taylor
+#Brendan Vick, McKay Boody, Hayden Enloe, Landon Graham, Bryson Lindsey
 """•	Create an Order class -Brendan
 o	Create a constructor that defines an instance variable called burger_count
 o	Create a method called randomBurgers that returns a number between 1 and 20
