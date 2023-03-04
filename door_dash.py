@@ -1,8 +1,9 @@
 #Brendan Vick, McKay Boody, Hayden Enloe, Landon Graham, Bryson Lindsey
-"""•	Create an Order class -Brendan
-o	Create a constructor that defines an instance variable called burger_count
-o	Create a method called randomBurgers that returns a number between 1 and 20
-o	The constructor should call the randomBurgers() method and assign the return value to the burger_count instance variable"""
+
+#Description: Keep a running total of burgers ordered for those in a line of 100.
+
+#A random number of burgers will be assigned to each order.
+#Create an Order class that has a method that generates a random amount of burgers
 import random
 class Order():
         def __init__(self):
@@ -10,16 +11,9 @@ class Order():
 
         def randomBurgers(self):
                 return random.randint(1,20)
+        
 
-# Create a Person class- Mckay
-# Create a constructor that defines an instance variable called customer_name
-# o	Create a method called randomName() that contains a list of 9 names:
-     # asCustomers = ["Jefe", "El Guapo", "Lucky Day", "Ned Nederlander", "Dusty Bottoms", "Harry Flugleman", "Carmen", "Invisible Swordsman", "Singing Bush"]
-# •	This method randomly returns one of the 9 names when called
-# o	The Person constructor should call the randomName() method and assign the return value (a random name) to the customer_name instance variable
-
-
-#Create a Person class
+#Create a Person class that returns a random name through a method called randomName
 class Person ():
     def __init__(self):
         self.customer_name = self.randomName ()
@@ -28,27 +22,22 @@ class Person ():
         asCustomers = ["Jefe", "El Guapo", "Lucky Day", "Ned Nederlander", "Dusty Bottoms", "Harry Flugleman", "Carmen", "Invisible Swordsman", "Singing Bush"]
         return asCustomers[random.randint(0,8)]
 
-#Create a Customer class that inherits from the Person class -Mckay
-#Create a constructor that calls the parent constructor
-#Create an instance variable called order in the constructor that is assigned an order object""
 
-#Create a Customer subclass
+#Create a Customer subclass that contains an instance variable that is an Order object
 class Customer (Person):
       def __init__(self):
         super().__init__()
         self.order = Order()
-      
+        
 
-
-
-# Create a variable for a Queue that will be assigned items of type Customer - Hayden
-# This variable will represent your line of customers (objects) waiting outside to place their hamburger orders"""
-
+#Main Program
+#Create a queue and a dictionary that interact to keep a running total of how many burgers the 9 names ordered out of the 100 orders.
 queue_customers = []
 dCustomer = {}
 
 iCountQue = 100
 
+#Keep a running total of burgers
 for iCount in range (0, iCountQue) :
         oCus = Customer() 
         queue_customers.append(oCus.customer_name)
@@ -58,31 +47,10 @@ for iCount in range (0, iCountQue) :
                 dCustomer[oCus.customer_name] = oCus.order.burger_count
                 
                 
+#Sort the names in the dictionary from most burgers ordered to least burgers ordered (10,8,4,2, etc.)
 listSortedCustomers = sorted(dCustomer.items(), key=lambda x: x[1], reverse=True) 
 
 
-
+#Print each customer and their total burgers ordered sorted from most to least ordered
 for iCount in range (0,len(listSortedCustomers)) :
     print("\n" + str(listSortedCustomers[iCount]))
-
-
-        #Brendan note: the queue will load 100 people (iCountQue = 100 or something) and will track how many burgers each of the 9 names order.
-        #The 9 names will be repeated (but not printed). The names will have a running total of how many burgers were ordered just like the>
-        #Picture in the instructions
-
-"""•	Create a variable for a Dictionary with keys of type string and values of type int. - Bryson
-o	This variable will hold information about each customer 
-•	Put 100 customers into the queue. Each customer object will already have a random number of burgers for each order
-•	Make sure there is a key in the dictionary for each customer before you try incrementing their total! Otherwise, add the customer to the dictionary.
-•	Print out each customer and their total burgers ordered sorted by the most number of burgers ordered"""
-
-
-        
-"""NOTE: Remember that a queue in Python is a list data structure. Also, the randint() method from the random class returns a random number. For example:
-iRandomNum = random.randint(0,8)
-This returns a random integer between 0 and 8 (9 numbers).
-iRandomBurger = random.randint(1, 20)
-This would return a random number between 1 and 20."""
-
-
-#landonovan
