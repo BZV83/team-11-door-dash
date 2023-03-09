@@ -54,5 +54,3 @@ listSortedCustomers = sorted(dCustomer.items(), key=lambda x: x[1], reverse=True
 #Print each customer and their total burgers ordered sorted from most to least ordered
 for iCount in range (0,len(listSortedCustomers)) :
     print("\n" + str(listSortedCustomers[iCount]))
-
-#landon's comment
